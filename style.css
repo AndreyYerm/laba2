@@ -106,3 +106,24 @@ nav a {
     background-color: red;
     transition: .7s;
 }
+div{
+    display: block;
+    position: absolute;
+    top: 20px;
+    animation-duration: 30s;
+    animation-name: ad_appearing;
+    animation-iteration-count: infinite;
+
+}
+.img{
+    width: 500px;
+    border: 3px solid black;
+}
+@keyframes ad_appearing{
+    0% {opacity: 0;}
+    25% {opacity: 0; right: -200px}
+    30% {opacity: 1; right: 20px;}
+    75% {opacity: 1; right: 20px;}
+    80% {opacity: 0; right: 220px}
+    100% {opacity: 0;}
+}
